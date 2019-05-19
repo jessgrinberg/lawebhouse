@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Geomanist-bold";
-  src: url("/fonts/Geomanist-bold") format("ttf"),
+  src: url("/fonts/geomanist.ttf") format("ttf"),
+  src: url("/fonts/geomanist.woff") format("woff");
 }
 
 * {
@@ -15,7 +16,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Geomanist-bold', sans-serif;
+  font-family: 'geomanist', sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -282,7 +284,9 @@ form label .label-text {
 form label input,
 form label textarea {
   background-color: transparent;
-  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0px none transparent;
   border-bottom: 1px solid #000;
   font-size: 14px;
   letter-spacing: -1px;
