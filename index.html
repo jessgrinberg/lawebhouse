@@ -40,6 +40,11 @@
             <p>We are a global digital agency based in Los Angeles, CA.
                We focus on making the web available to everyone with modern and aesthetic solutions.
             </p>
+
+            <!-- <button class="btn btn-outline-primary btn-hero mt-4 mb-md-0 mb-5"><a href="#about">Learn more</a></button> -->
+
+            <!-- <button onclick="location.href='#about'" type="button" name="button" class="btn btn-outline-primary btn-hero mt-4 mb-md-0 mb-5" id="btn">Learn more</button> -->
+
             <a href="#about" class="btn btn-outline-primary btn-hero mt-4 mb-md-0 mb-5" role="button">Learn more</a>
           </div>
           <div class="col-12 col-sm-8 col-md-6 mx-auto my-5">
@@ -173,17 +178,20 @@
             <p>Need a better brand? Put your first feet on the web?
               Feel free to send us a message to talk about your ideas.
             </p>
+
             <form action="http://formspree.io/lawebhouse@gmail.com" method="POST" class="mt-5">
               <label>
-                <input type="text" required />
+                <input type="email" name="_replyto" required>
                 <div class="label-text">Email</div>
               </label>
               <label>
                 <textarea type="text" required ></textarea>
                 <div class="label-text">Message</div>
               </label>
-              <button class="btn btn-outline-primary mt-4" role="button">Submit</button>
+              <input type="submit" value="Send" class="btn btn-outline-primary mt-4">
             </form>
+
+
           </div>
         </div>
       </div>

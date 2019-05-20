@@ -29,6 +29,22 @@ a {
   text-decoration: none !important;
 }
 
+.btn-hero:focus, .btn-hero:active:focus, .btn-hero.active:focus .btn-hero:selected{
+  outline: none !important;
+}
+
+a,
+a:active,
+a:focus,
+a:link {
+  /*outline: none !important;
+  box-shadow:none;*/
+  /*outline: 0 !important;*/
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 .row {
   width: 100%;
   max-width: 940px;
