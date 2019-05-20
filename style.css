@@ -100,7 +100,7 @@ a:link {
 }
 
 .logo {
-  font-family: Geomanist-bold;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   color: #000;
   font-size: 25px;
   float: left;
@@ -137,7 +137,7 @@ nav ul a {
   color: #000;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Geomanist-bold', sans-serif;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
 }
 
 nav a:hover {
@@ -206,7 +206,7 @@ nav a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: "Geomanist-bold";
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   color: #FC335A;
   font-size: 14px;
   letter-spacing: 0;
