@@ -1,6 +1,10 @@
-@font-face {
-  font-family: "Geomanist-bold";
-  src: url("/fonts/Geomanist-bold") format("ttf"),
+@font-face{
+	font-family: 'geomanist-bold-webfont';
+	src: url('fonts/geomanist-bold-webfont.eot');
+	src: url('fonts/geomanist-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/geomanist-bold-webfont.woff') format('woff'),
+	     url('fonts/geomanist-bold-webfont.ttf') format('truetype'),
+	     url('fonts/geomanist-bold-webfont.svg#webfont') format('svg');
 }
 
 * {
@@ -15,7 +19,8 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: 'Geomanist-bold', sans-serif;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
+  font-weight: 800;
   text-transform: uppercase;
 }
 
@@ -26,6 +31,22 @@ p {
 a {
   text-decoration: none !important;
 }
+
+.btn-hero:focus, .btn-hero:active:focus, .btn-hero.active:focus .btn-hero:selected{
+  outline: none !important;
+}
+
+a,
+a:active,
+a:focus,
+a:link {
+  /*outline: none !important;
+  box-shadow:none;*/
+  /*outline: 0 !important;*/
+}
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
 
 .row {
   width: 100%;
@@ -79,7 +100,7 @@ a {
 }
 
 .logo {
-  font-family: Geomanist-bold;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   color: #000;
   font-size: 25px;
   float: left;
@@ -116,7 +137,7 @@ nav ul a {
   color: #000;
   text-transform: uppercase;
   font-size: 12px;
-  font-family: 'Geomanist-bold', sans-serif;
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
 }
 
 nav a:hover {
@@ -185,7 +206,7 @@ nav a:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: "Geomanist-bold";
+  font-family: 'geomanist-bold-webfont', Arial, sans-serif;
   color: #FC335A;
   font-size: 14px;
   letter-spacing: 0;
@@ -238,10 +259,22 @@ section {
   margin: 100px 20px 0;
 }
 
-.portfolio a {
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.portfolio button {
   color: #FC335A;
   font-weight: 700;
   font-size: 13px;
+}
+
+.portfolio button:focus {
+  box-shadow: 0 0 0 0rem rgba(0,0,0,.0);
 }
 
 .clients-mockups .row {
@@ -282,7 +315,10 @@ form label .label-text {
 form label input,
 form label textarea {
   background-color: transparent;
-  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0px none transparent;
+  border-radius: 0;
   border-bottom: 1px solid #000;
   font-size: 14px;
   letter-spacing: -1px;
