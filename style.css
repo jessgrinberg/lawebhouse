@@ -36,15 +36,6 @@ a {
   outline: none !important;
 }
 
-a,
-a:active,
-a:focus,
-a:link {
-  /*outline: none !important;
-  box-shadow:none;*/
-  /*outline: 0 !important;*/
-}
-
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 
@@ -85,7 +76,7 @@ a:link {
 }
 
 .open-nav {
-  max-height: 400px !important;
+  max-height: 500px !important;
 }
 .open-nav .mobile-toggle {
   transform: rotate(-90deg);
@@ -213,14 +204,14 @@ nav a:hover {
   text-transform: uppercase;
   background: transparent;
   border: 2px solid #FC335A;
-  padding: 14px 24px 10px;
+  padding: 14px 24px 13px;
   border-radius: 0px;
   min-width: 150px;
   letter-spacing: .1em;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  line-height: 1;
+  line-height: 1em;
 }
 
 .btn-outline-primary:hover {
@@ -239,7 +230,7 @@ nav a:hover {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  line-height: 1;
+  line-height: 1em;
 }
 
 .btn-hero:hover {
@@ -377,6 +368,7 @@ footer i:focus {
 @media only screen and (max-width: 766px) {
   .main_h {
     padding-top: 25px;
+		box-shadow: 0 8px 6px -6px gainsboro;
   }
   .logo {
     float: none;
@@ -393,7 +385,13 @@ footer i:focus {
     width: 100%;
     padding: 7px 0;
     margin: 0;
+		line-height: 6;
   }
+
+	nav ul a {
+		font-size: 16px;
+	}
+
   .mobile-toggle {
     display: block;
   }
