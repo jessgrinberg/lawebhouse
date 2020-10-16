@@ -179,6 +179,11 @@ nav a:hover {
   font-size: 14px;
 }
 
+.lottie-animation {
+
+	margin: 0 auto;
+}
+
 
 /* END HEADER*/
 
@@ -316,7 +321,7 @@ form label textarea {
   outline: 0;
   padding: 5px 20px;
   transition: all 0.3s;
-  width: 300px;
+	width: 100%;
 }
 
 form label input:focus,
@@ -419,6 +424,20 @@ footer i:focus {
   section {
     padding: 150px 2% 150px;
   }
+}
+
+@media (min-width: 768px) {
+	.intro {
+		display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: flex-start;
+	}
+
+	form label input,
+	form label textarea {
+	  width: 400px;
+	}
 }
 
 /* END RESPONSIVE */
